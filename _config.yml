@@ -1,1 +1,17 @@
-theme: cayman
+remote_theme: daattali/beautiful-jekyll
+
+# Settings
+title: Paulina Ghisoni
+description: Data Analyst
+
+# Navigation bar links
+navbar-links:
+  Home: "index"
+  Portfolio: "porfolio"
+  About: "about"
+
+author:
+  name: Paulina Ghisoni
+
+# Profile picture
+# avatar: "/assets/img/avatar.jpg"

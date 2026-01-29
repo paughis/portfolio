@@ -1,9 +1,9 @@
-# Analisi della Soddisfazione del Cliente
-## Olist E-Commerce
+---
+layout: page
+title: Customer Satisfaction Analysis
+---
 
-**Di Paulina Ghisoni**  
-📧 pghisonim@gmail.com  
-🔗 [LinkedIn](https://www.linkedin.com/in/paulinaghisoni)
+# Olist E-Commerce
 
 ---
 

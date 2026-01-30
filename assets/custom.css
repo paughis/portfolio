@@ -1,0 +1,6 @@
+/* Sposta avatar a sinistra */
+.header-section .avatar-container {
+  float: left;
+  margin-eight: 20px;
+  margin-left: 0;
+}

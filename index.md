@@ -1,10 +1,6 @@
 ---
 layout: home
 ---
-<style>
-@import url("{{ site.baseurl }}/assets/css/custom.css");
-</style>
-
 <div class="sidebar-left">
   <img src="{{ site.baseurl }}/assets/avatar.jpg" alt="Paulina Ghisoni">
   <h1>Paulina Ghisoni</h1>

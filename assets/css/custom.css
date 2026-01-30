@@ -2,15 +2,13 @@
 .intro-header.big-img {
   display: none;  /* nasconde header*/
 }
-
 .main-content {
   display: flex;
   gap: 0;
   max-width: 100%;
-  padding: 0;  /* era "paggind" */
+  padding: 0;
   margin: 0;
 }
-
 /* Colonna sinistra - sidebar grigia */
 .sidebar-left { 
   background-color: #4a4a4a;
@@ -23,34 +21,24 @@
   left: 0;
   top: 60px;
 }
-
-.sidebar-left h1 {
-  font-size: 30px;
-}
-
-.sidebar-left h2 {
-  font-size: 20px;
-}
-
 .sidebar-left img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
   margin-bottom: 20px;
 }
-
 .sidebar-left h1 {
   color: white;
-  font-size: 28px;
-  margin-bottom: 10px;
+  font-size: 44px; 
+  margin-bottom: 15px;
+  font-weight: 600;
 }
-
 .sidebar-left h2 {
   color: #e0e0e0;
-  font-size: 20px;
-  font-weight: 300; 
+  font-size: 26px; 
+  font-weight: 300;
+  margin-bottom: 30px;
 }
-
 /* Colonna destra - contenuto */
 .content-right {
   margin-left: 380px;
@@ -59,18 +47,16 @@
   background-color: white;
   max-width: 720px;
 }
-
 .content-right h2 {
-  font-size: 32px;
-  margin-bottom: 20px;
+  font-size: 46px;
+  margin-bottom: 30px;
+  font-weight: 700;
 }
-
 .content-right p {
-  font-size: 18px;
-  line-height: 1.8;
-  margin-bottom: 20px;
+  font-size: 22px; 
+  line-height: 1.7;
+  margin-bottom: 28px;
 }
-
 /* responsive */
 @media (max-width: 768px) {
   .main-content {
@@ -87,18 +73,41 @@
     padding: 40px 20px;
   }
 }
-
 /* Contatti nella sidebar */
+.sidebar-contacts {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
 .sidebar-contacts a {
-  font-size: 15px;
+  font-size: 18px;
   letter-spacing: 1px;
   text-transform: uppercase;
   color: #e0e0e0;
   text-decoration: none;
   transition: color 0.2s ease;
 }
-
 .sidebar-contacts a:hover {
   color: #ffffff;
   text-decoration: underline;
+}
+/* Divisori */
+.sidebar-divider {
+  border: 0;
+  height: 1px;
+  background-color: #e0e0e0;
+  margin: 20px 0;
+  opacity: 0.3;
+}
+.content-divider {
+  border: 0;
+  height: 1px;
+  background-color: #ddd;
+  margin: 40px 0;
+}
+.site-status {
+  font-size: 20px;
+  color: #666;
+  font-style: italic;
 }

@@ -4,6 +4,10 @@ remote_theme: daattali/beautiful-jekyll
 title: Paulina Ghisoni
 description: Data Analyst
 
+# Base URL settings
+baseurl: "/portfolio"
+url: "https://paughis.github.io/"
+
 # Navigation bar links
 navbar-links:
   Home: "index"

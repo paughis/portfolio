@@ -18,3 +18,7 @@ author: Paulina Ghisoni
 
 # Profile picture
 avatar: "assets/avatar.jpg"
+
+# Custom CSS
+head-extra: |
+  <link rel="stylesheet" href= "{{ '/assets/css/custom.css' | relative_url }}">

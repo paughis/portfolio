@@ -12,6 +12,3 @@ navbar-links:
   About: "about"
 author: Paulina Ghisoni
 
-# --- CSS Custom ---
-ext-css: 
-  - "assets/css/custom.css"

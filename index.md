@@ -1,7 +1,8 @@
 ---
 layout: home
-subtitle: Paulina Ghisoni | Data Analyst
 ---
+
+<h2 style="text-align: center; color: #404040; margin-bottom: 20px; ">Paulina Ghisoni | Data Analyst </h2>
 
 Sito in costruzione
 

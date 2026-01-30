@@ -2,6 +2,7 @@
 .intro-header.big-img {
   display: none;  /* nasconde header*/
 }
+
 .main-content {
   display: flex;
   gap: 0;
@@ -9,8 +10,9 @@
   padding: 0;  /* era "paggind" */
   margin: 0;
 }
+
 /* Colonna sinistra - sidebar grigia */
-.sidebar-left {  /* era "sidebarg-left" */
+.sidebar-left { 
   background-color: #4a4a4a;
   color: white;
   width: 300px;
@@ -21,38 +23,45 @@
   left: 0;
   top: 60px;
 }
+
 .sidebar-left img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
   margin-bottom: 20px;
 }
+
 .sidebar-left h1 {
   color: white;
-  font-size: 28px;  /* era "fint-size" */
+  font-size: 28px;
   margin-bottom: 10px;
 }
+
 .sidebar-left h2 {
   color: #e0e0e0;
   font-size: 20px;
-  font-weight: 300;  /* era 200, meglio 300 */
+  font-weight: 300; 
 }
+
 /* Colonna destra - contenuto */
 .content-right {
   margin-left: 300px;
-  padding: 60px 80px;  /* era "80 px" con lo spazio */
+  padding: 60px 80px;
   flex: 1;
   background-color: white;
 }
+
 .content-right h2 {
   font-size: 24px;
   margin-bottom: 20px;
 }
+
 .content-right p {
   font-size: 16px;
   line-height: 1.6;
   margin-bottom: 20px;
 }
+
 /* responsive */
 @media (max-width: 768px) {
   .main-content {
@@ -62,10 +71,25 @@
     position: relative;
     width: 100%;
     min-height: auto;
-    top: 0;  /* mancava il punto e virgola */
+    top: 0;
   }
   .content-right {
     margin-left: 0;
     padding: 40px 20px;
   }
+}
+
+/* Contatti nella sidebar */
+.sidebar-contacts a {
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #e0e0e0;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.sidebar-contacts a:hover {
+  color: #ffffff;
+  text-decoration: underline;
 }

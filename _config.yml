@@ -16,3 +16,5 @@ author: Paulina Ghisoni
 # Questo è il modo ufficiale di Beautiful Jekyll per aggiungere CSS
 ext-css: 
   - "/portfolio/assets/css/custom.css"
+
+# Deploy fix

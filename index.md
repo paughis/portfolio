@@ -10,6 +10,16 @@ layout: home
   <hr class="sidebar-divider">
 
   <h2>Data Analyst</h2>
+
+  <nav class="sidebar-contacts" aria-label= "Contatti">
+    <a href="https://www.linkedin.com/in/paulinaghisoni" target="_blank" rel="noopener">
+      LinkedIn
+    </a>
+
+    <a href= "mailto:pghisonim@gmail.com">
+      Email
+    </a>
+  </nav>
 </div>
 
 <div class="content-right">

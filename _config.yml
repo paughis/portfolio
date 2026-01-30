@@ -13,8 +13,5 @@ navbar-links:
 author: Paulina Ghisoni
 
 # --- CSS Custom ---
-# Questo è il modo ufficiale di Beautiful Jekyll per aggiungere CSS
 ext-css: 
-  - "/portfolio/assets/css/custom.css"
-
-# Deploy fix
+  - "assets/css/custom.css"

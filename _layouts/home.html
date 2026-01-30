@@ -14,23 +14,26 @@ layout: default
   padding: 0 !important;
   margin: 0 !important;
 }
-/* Colonna sinistra - sidebar grigia - PIÙ GRANDE */
+/* Colonna sinistra - sidebar grigia */
 .sidebar-left { 
   background-color: #4a4a4a;
   color: white;
   width: 450px !important;
-  padding: 80px 40px !important;
+  padding: 100px 40px 80px 40px !important;  /* più padding in alto per centrare meglio */
   text-align: center;
   min-height: 100vh;
   position: fixed;
   left: 0;
   top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* centra verticalmente il contenuto */
 }
 .sidebar-left img {
   width: 200px !important;
   height: 200px !important;
   border-radius: 50%;
-  margin-bottom: 30px !important;
+  margin-bottom: 35px !important;  /* più spazio sotto la foto */
 }
 .sidebar-left h1 {
   color: white !important;
@@ -40,13 +43,14 @@ layout: default
 }
 .sidebar-left h2 {
   color: #e0e0e0 !important;
-  font-size: 32px !important;
+  font-size: 28px !important;  /* aumentato da 32px */
   font-weight: 300 !important;
   margin-bottom: 40px !important;
 }
+/* Colonna destra - contenuto PIÙ LARGO */
 .content-right {
   margin-left: 450px !important;
-  padding: 80px 100px !important;
+  padding: 100px 150px !important;  /* aumentato padding laterale da 100px a 150px */
   flex: 1;
   background-color: white;
   max-width: none !important;
@@ -64,23 +68,28 @@ layout: default
 }
 .content-right a {
   font-size: 28px !important;
+  font-weight: normal !important;  /* rimuove grassetto da tutti i link */
 }
+.content-right strong {
+  font-weight: normal !important;  /* rimuove grassetto dal tag strong */
+}
+/* NAVBAR IN ALTO - PIÙ GRANDE */
 .navbar-custom,
 .navbar,
 .navbar-default {
-  font-size: 22px !important;
-  min-height: 70px !important;
+  font-size: 24px !important;  /* aumentato da 22px */
+  min-height: 75px !important;
 }
 .navbar-custom .nav > li > a,
 .navbar .nav > li > a,
 .nav > li > a {
-  font-size: 22px !important;
-  padding: 25px 20px !important;
+  font-size: 24px !important;  /* aumentato da 22px */
+  padding: 27px 20px !important;
 }
 .navbar-custom .navbar-brand,
 .navbar-brand {
-  font-size: 28px !important;
-  padding: 25px 20px !important;
+  font-size: 30px !important;  /* aumentato da 28px */
+  padding: 27px 20px !important;
 }
 footer,
 .footer,
@@ -111,6 +120,7 @@ footer a,
     width: 100% !important;
   }
 }
+/* Contatti nella sidebar */
 .sidebar-contacts {
   margin-top: 40px !important;
   display: flex;
@@ -118,7 +128,7 @@ footer a,
   gap: 20px !important;
 }
 .sidebar-contacts a {
-  font-size: 22px !important;
+  font-size: 24px !important;  /* aumentato da 22px */
   letter-spacing: 1.5px !important;
   text-transform: uppercase;
   color: #e0e0e0 !important;

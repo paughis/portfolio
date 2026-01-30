@@ -6,7 +6,7 @@ description: Data Analyst
 
 # Base URL settings
 baseurl: "/portfolio"
-url: "https://paughis.github.io/"
+url: "https://paughis.github.io"
 
 # Navigation bar links
 navbar-links:
@@ -15,6 +15,5 @@ navbar-links:
   About: "about"
 
 author: Paulina Ghisoni
-
 # Profile picture
 # avatar: "assets/avatar.jpg"

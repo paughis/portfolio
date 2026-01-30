@@ -9,12 +9,12 @@
   padding: 0 !important;
   margin: 0 !important;
 }
-/* Colonna sinistra - sidebar grigia */
+/* Colonna sinistra - sidebar grigia - PIÙ GRANDE */
 .sidebar-left { 
   background-color: #4a4a4a;
   color: white;
-  width: 380px;
-  padding: 60px 30px;
+  width: 450px !important;  /* aumentato da 380px */
+  padding: 80px 40px !important;  /* aumentato padding */
   text-align: center;
   min-height: 100vh;
   position: fixed;
@@ -22,123 +22,4 @@
   top: 60px;
 }
 .sidebar-left img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin-bottom: 20px;
-}
-.sidebar-left h1 {
-  color: white !important;
-  font-size: 44px !important;
-  margin-bottom: 15px;
-  font-weight: 600;
-}
-.sidebar-left h2 {
-  color: #e0e0e0 !important;
-  font-size: 26px !important;
-  font-weight: 300;
-  margin-bottom: 30px;
-}
-/* Colonna destra - contenuto PIÙ LARGO */
-.content-right {
-  margin-left: 380px !important;
-  padding: 80px 100px !important;
-  flex: 1;
-  background-color: white;
-  max-width: none !important;
-  width: calc(100% - 380px) !important;
-}
-.content-right h2 {
-  font-size: 56px !important;
-  margin-bottom: 35px !important;
-  font-weight: 700 !important;
-}
-.content-right p {
-  font-size: 28px !important;
-  line-height: 1.8 !important;
-  margin-bottom: 32px !important;
-}
-.content-right a {
-  font-size: 28px !important;
-}
-/* NAVBAR IN ALTO - PIÙ GRANDE */
-.navbar-custom,
-.navbar,
-.navbar-default {
-  font-size: 20px !important;
-}
-.navbar-custom .nav > li > a,
-.navbar .nav > li > a {
-  font-size: 20px !important;
-  padding: 20px 15px !important;
-}
-.navbar-custom .navbar-brand,
-.navbar-brand {
-  font-size: 24px !important;
-}
-/* FOOTER IN BASSO - PIÙ GRANDE */
-footer,
-.footer,
-footer p,
-footer .copyright {
-  font-size: 18px !important;
-  line-height: 1.6 !important;
-}
-footer a {
-  font-size: 18px !important;
-}
-/* responsive */
-@media (max-width: 768px) {
-  .main-content {
-    flex-direction: column;
-  }
-  .sidebar-left {
-    position: relative;
-    width: 100%;
-    min-height: auto;
-    top: 0;
-  }
-  .content-right {
-    margin-left: 0 !important;
-    padding: 40px 20px !important;
-    width: 100% !important;
-  }
-}
-/* Contatti nella sidebar */
-.sidebar-contacts {
-  margin-top: 30px;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-.sidebar-contacts a {
-  font-size: 18px !important;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: #e0e0e0;
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-.sidebar-contacts a:hover {
-  color: #ffffff;
-  text-decoration: underline;
-}
-/* Divisori */
-.sidebar-divider {
-  border: 0;
-  height: 1px;
-  background-color: #e0e0e0;
-  margin: 20px 0;
-  opacity: 0.3;
-}
-.content-divider {
-  border: 0;
-  height: 1px;
-  background-color: #ddd;
-  margin: 40px 0;
-}
-.site-status {
-  font-size: 24px !important;
-  color: #666;
-  font-style: italic;
-}
+  width: 200px !import

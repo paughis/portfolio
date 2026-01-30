@@ -11,3 +11,7 @@ navbar-links:
   Portfolio: "portfolio"
   About: "about"
 author: Paulina Ghisoni
+
+# CSS CUSTOM
+head-extra: |
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/custom.css">

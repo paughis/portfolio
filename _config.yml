@@ -1,19 +1,16 @@
 remote_theme: daattali/beautiful-jekyll
-
 # Settings
 title: Paulina Ghisoni
 description: Data Analyst
-
 # Base URL settings
 baseurl: "/portfolio"
 url: "https://paughis.github.io"
-
 # Navigation bar links
 navbar-links:
   Home: "index"
   Portfolio: "portfolio"
   About: "about"
-
 author: Paulina Ghisoni
-# Profile picture
-# avatar: "assets/avatar.jpg"
+# Custom CSS
+head-extra: |
+  <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">

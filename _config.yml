@@ -7,7 +7,7 @@ description: Data Analyst
 # Navigation bar links
 navbar-links:
   Home: "index"
-  Portfolio: "porfolio"
+  Portfolio: "portfolio"
   About: "about"
 
 author:

@@ -1,0 +1,71 @@
+/* Layout a due colonne per la home */
+.intro-header.big-img {
+  display: none;  /* nasconde header*/
+}
+.main-content {
+  display: flex;
+  gap: 0;
+  max-width: 100%;
+  padding: 0;  /* era "paggind" */
+  margin: 0;
+}
+/* Colonna sinistra - sidebar grigia */
+.sidebar-left {  /* era "sidebarg-left" */
+  background-color: #4a4a4a;
+  color: white;
+  width: 300px;
+  padding: 60px 30px;
+  text-align: center;
+  min-height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 60px;
+}
+.sidebar-left img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.sidebar-left h1 {
+  color: white;
+  font-size: 28px;  /* era "fint-size" */
+  margin-bottom: 10px;
+}
+.sidebar-left h2 {
+  color: #e0e0e0;
+  font-size: 20px;
+  font-weight: 300;  /* era 200, meglio 300 */
+}
+/* Colonna destra - contenuto */
+.content-right {
+  margin-left: 300px;
+  padding: 60px 80px;  /* era "80 px" con lo spazio */
+  flex: 1;
+  background-color: white;
+}
+.content-right h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.content-right p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+/* responsive */
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+  }
+  .sidebar-left {
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    top: 0;  /* mancava il punto e virgola */
+  }
+  .content-right {
+    margin-left: 0;
+    padding: 40px 20px;
+  }
+}

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About me
+title: About me :)
 ---
 
 <div style="display: flex; gap: 2rem; align-items: start; flex-wrap: wrap;">
@@ -9,7 +9,6 @@ title: About me
   </div>
   
   <div style="flex: 1; min-width: 300px;">
-    
     <p>La curiosità e la passione per l'apprendimento sono state il motore che mi ha portato a intraprendere la carriera di data analyst, dopo un'esperienza nell'insegnamento e nella ricerca educativa.</p>
     
     <p>L'incrocio tra questi due mondi mi ha permesso di sviluppare solide competenze analitiche unite a una comunicazione efficace: so trasformare dati complessi in insight preziosi.</p>
@@ -19,6 +18,7 @@ title: About me
     <p>Attualmente sto ampliando le mie conoscenze attraverso lo sviluppo di progetti personali, che puoi trovare nella sezione Portfolio.</p>
     
     <p>Sono disponibile per collaborazioni freelance.<br>
-    pghisonim@gmail.com  <a href="https://www.linkedin.com/in/paulinaghisoni/" target="_blank">linkedin: paulinaghisoni</a></p>
+    📧 pghisonim@gmail.com<br>
+    💼 <a href="https://www.linkedin.com/in/paulinaghisoni/" target="_blank">linkedin: paulinaghisoni</a></p>
   </div>
 </div>

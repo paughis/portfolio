@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Customer Satisfaction Analysis
+permalink : /olist_markdown/
 ---
 
 <img src="{{ site.baseurl }}/assets/olist1_titolo.png" alt="Olist E-Commerce" style="width: 100%;">

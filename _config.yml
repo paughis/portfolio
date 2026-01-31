@@ -201,8 +201,8 @@ plugins:
 # title: Paulina Ghisoni
 # description: Data Analyst
 # # Base URL settings
-# baseurl: "/portfolio"
-# url: "https://paughis.github.io"
+baseurl: "/portfolio"
+url: "https://paughis.github.io"
 # # Navigation bar links
 # navbar-links:
 #   HOME: "index"

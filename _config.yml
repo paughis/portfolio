@@ -12,7 +12,8 @@ remote_theme: daattali/beautiful-jekyll
 ############################
 
 # Name of website
-title: Paulina Ghisoni | Data Analyst
+title: Paulina Ghisoni
+subtitle: Data Analyst Portfolio
 
 # Your name to show in the footer
 author: Paulina Ghisoni
@@ -41,7 +42,7 @@ round-avatar: true
 
 # If you want to have an image logo in the top-left corner instead of having the title of the website,
 # then specify the following parameter
-title-img: /path/to/image
+title-img: "/assets/avatar.jpg"
 
 
 #####################################

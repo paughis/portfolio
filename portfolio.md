@@ -3,7 +3,7 @@ layout: page
 title: Portfolio
 ---
 
-Ecco alcuni dei mei progetto recenti:
+Ecco alcuni dei mei progetti recenti:
 
 ## [Olist customer satisfaction analysis](olist_markdown)
 

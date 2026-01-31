@@ -1,31 +1,16 @@
 ---
 layout: home
+title: Paulina Ghisoni | Data Analyst
 ---
-<div class="sidebar-left">
-  <img src="{{ site.baseurl }}/assets/avatar.jpg" alt="Paulina Ghisoni">
-  <h1>Paulina Ghisoni</h1>
-  <hr class="sidebar-divider">
-  <h2>Data Analyst</h2>
-  <nav class="sidebar-contacts" aria-label= "Contatti">
-    <a href="https://www.linkedin.com/in/paulinaghisoni" target="_blank" rel="noopener">
-      LinkedIn
-    </a>
-    <a>pghisonim@gmail.com</a>
-  </nav>
-</div>
-<div class="content-right">
-  <h2>Ciao!</h2>
-  <p>
-    Sono Paulina, una data analyst appassionata di trasformare i dati in storie, risposte e azioni. Il mio lavoro è spinto dalla curiosità e dalla passione per scoprire il perché delle cose.
-  </p>
-  <p>
-    Quando mi trovo davanti allo schermo ad analizzare dati, divento un'investigatrice tenace e meticolosa, determinata a estrarre dalle informazioni il loro massimo potenziale.
-  </p>
-  <p>
-    Esplora il mio <a href="{{ site.baseurl }}/portfolio">portfolio</a> per vedere esempi del mio lavoro, oppure visita la pagina <a href="{{ site.baseurl }}/about">about</a> per saperne di più su di me.
-  </p>
-  <hr class="content-divider">
-  <p class="site-status">
-    Sito in costruzione<br>🪏🪏🪏🪏🪏🪏🪏🪏
-  </p>
-</div>
+
+Sito in costruzione
+
+🪏🪏🪏🪏🪏🪏🪏🪏
+
+---
+
+Ciao! Sono Paulina, una data analyst appassionata di trasformare i dati in storie, risposte e azioni. Il mio lavoro è spinto dalla curiosità e dalla passione per scoprire il perché delle cose.
+
+Quando mi trovo davanti allo schermo ad analizzare dati, divento un'investigatrice tenace e meticolosa, determinata a estrarre dalle informazioni il loro massimo potenziale.
+
+Esplora il mio [portfolio](portfolio) per vedere esempi del mio lavoro, oppure visita la pagina [about](about) per saperne di più su di me.

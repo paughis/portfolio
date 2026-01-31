@@ -5,7 +5,7 @@ title: About me :)
 
 <div style="display: flex; gap: 2rem; align-items: start; flex-wrap: wrap;">
   <div style="flex: 0 0 250px;">
-    <img src="/assets/foto_profilo.jpg" alt="Profile photo" style="width: 100%; border-radius: 8px;">
+    <img src="{{ site.baseurl }}/assets/foto_profilo.jpg" alt="Profile photo" style="width: 100%; border-radius: 8px;">
   </div>
   
   <div style="flex: 1; min-width: 300px;">
@@ -19,6 +19,6 @@ title: About me :)
     
     <p>Sono disponibile per collaborazioni freelance.<br>
     📧 pghisonim@gmail.com<br>
-    💼 <a href="https://www.linkedin.com/in/paulinaghisoni/" target="_blank">linkedin: paulinaghisoni</a></p>
+    💼 <a href="https://www.linkedin.com/in/paulinaghisoni/" target="_blank">LinkedIn: paulinaghisoni</a></p>
   </div>
 </div>

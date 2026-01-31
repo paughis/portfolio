@@ -1,6 +1,7 @@
 ---
 layout: home
-title: Paulina Ghisoni | Data Analyst
+title: Paulina Ghisoni
+subtitle: Data Analyst Portfolio
 ---
 
 Sito in costruzione

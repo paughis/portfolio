@@ -14,4 +14,4 @@ Ciao! Sono Paulina, una data analyst appassionata di trasformare i dati in stori
 
 Quando mi trovo davanti allo schermo ad analizzare dati, divento un'investigatrice tenace e meticolosa, determinata a estrarre dalle informazioni il loro massimo potenziale.
 
-Esplora il mio [portfolio](portfolio) per vedere esempi del mio lavoro, oppure visita la pagina [about](about) per saperne di più su di me.
+Esplora il mio [portfolio](portfolio) per vedere esempi del mio lavoro, oppure visita la pagina [about me](about) per saperne di più su di me.

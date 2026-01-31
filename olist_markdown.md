@@ -3,7 +3,7 @@ layout: page
 title: Customer Satisfaction Analysis
 ---
 
-# Olist E-Commerce
+<img src="{{ site.baseurl }}/assets/olist1_titolo.png" alt="Olist E-Commerce" style="width: 100%;">
 
 ---
 
@@ -25,6 +25,8 @@ title: Customer Satisfaction Analysis
 
 ## Obiettivi del Progetto e Business Case
 
+<img src="{{ site.baseurl }}/assets/olist2.png" alt="Obiettivi del Progetto" style="width: 100%;">
+
 ### Obiettivi del Progetto
 
 **Identificare i principali fattori dell'esperienza d'acquisto associati alla soddisfazione del cliente per Olist e proporre azioni di miglioramento adeguate.**
@@ -36,6 +38,8 @@ Olist è una piattaforma brasiliana che supporta i venditori nella gestione dell
 ---
 
 ## Architettura dei Dati
+
+<img src="{{ site.baseurl }}/assets/olist3_model.png" alt="Modello dei Dati" style="width: 100%;">
 
 ### Modello Multidimensionale - Power BI
 
@@ -49,6 +53,8 @@ La tabella aggrega informazioni provenienti da più fonti (tabelle 'payments', '
 
 ## Analisi Descrittiva
 
+<img src="{{ site.baseurl }}/assets/olist4_panoramica_sopra.png" alt="Analisi Descrittiva" style="width: 100%;">
+
 ### Distribuzione Temporale e Pattern delle Valutazioni
 
 #### Stabilità delle Valutazioni nel Tempo
@@ -57,13 +63,19 @@ La distribuzione dei voti rimane, nel complesso, stabile nel periodo analizzato.
 
 #### Tempo di Consegna e Soddisfazione
 
+<img src="{{ site.baseurl }}/assets/olist5_tempo_consegna_valutacione.png" alt="Tempo di Consegna vs Valutazione" style="float: left; margin-right: 20px; margin-bottom: 10px; max-width: 45%;">
+
 Gli ordini si concentrano prevalentemente nella fascia standard (6-15 giorni), mentre la categoria molto lenta è marginale.
 
 È evidente una correlazione positiva tra rapidità di consegna e valutazione media, suggerendo che il tempo di consegna potrebbe essere un driver significativo della customer satisfaction.
 
+<div style="clear: both;"></div>
+
 ---
 
 ## Analisi Comparativa: Ranking
+
+<img src="{{ site.baseurl }}/assets/olist_dash_2.png" alt="Analisi Comparativa" style="width: 100%;">
 
 ### Fattori Correlati alle Valutazioni
 
@@ -81,6 +93,8 @@ I pulsanti di filtro nella parte superiore consentono di selezionare la valutazi
 
 ## Analisi di Correlazione
 
+<img src="{{ site.baseurl }}/assets/olist7_corr.png" alt="Matrice di Correlazione" style="float: left; margin-right: 20px; margin-bottom: 10px; max-width: 45%;">
+
 Per approfondire l'analisi delle variabili numeriche di interesse, è stata costruita una matrice di correlazione di Pearson utilizzando Python (librerie Pandas e Seaborn).
 
 ### Insight Principali
@@ -88,6 +102,8 @@ Per approfondire l'analisi delle variabili numeriche di interesse, è stata cost
 1. **Correlazione Negativa**: Le aree più scure evidenziano una correlazione negativa moderata tra la valutazione media e il tempo di consegna (ritardo di consegna e tempo totale di spedizione), in linea con quanto osservato nelle dashboard precedenti.
 
 2. **Assenza di Correlazione con la Complessità**: Non emerge una correlazione significativa tra i tempi di consegna e la quantità di venditori coinvolti nell'ordine, contrariamente all'ipotesi iniziale di una maggiore complessità logistica. Tuttavia, data la bassa numerosità degli ordini multi-venditore, questi casi risultano poco rappresentativi e potrebbero richiedere un'analisi separata.
+
+<div style="clear: both;"></div>
 
 ---
 
@@ -97,19 +113,29 @@ Per approfondire l'analisi delle variabili numeriche di interesse, è stata cost
 
 #### Ritardo di Consegna e Numero di Venditori
 
+<img src="{{ site.baseurl }}/assets/olist8_venditore_vs_ritardo.png" alt="Venditori vs Ritardo" style="float: left; margin-right: 20px; margin-bottom: 10px; max-width: 45%;">
+
 All'aumentare del numero di venditori, il ritardo di consegna (definito come la differenza tra la data stimata di consegna e la data effettiva di arrivo al cliente) tende a spostarsi verso valori inferiori, sia nella media sia nell'intervallo interquartile.
 
 Questo risultato appare controintuitivo e solleva una domanda: **Perché ordini più complessi mostrano un ritardo minore?**
 
 **Risposta**: Le stime di consegna diventano più conservative con l'aumentare dei venditori.
 
+<div style="clear: both;"></div>
+
 #### Stima del Tempo di Consegna e Numero di Venditori
 
+<img src="{{ site.baseurl }}/assets/olist9_stima_consegna.png" alt="Stima Consegna vs Venditori" style="float: left; margin-right: 20px; margin-bottom: 10px; max-width: 45%;">
+
 L'analisi conferma che Olist applica stime sempre più conservative per gli ordini multi-venditore, gestendo efficacemente le aspettative dei clienti e riducendo i ritardi percepiti.
+
+<div style="clear: both;"></div>
 
 ---
 
 ## Analisi del Lead Time
+
+<img src="{{ site.baseurl }}/assets/olist_10_leadtime.png" alt="Analisi Lead Time" style="width: 100%;">
 
 ### Identificazione delle Fasi Critiche
 
@@ -127,6 +153,8 @@ I risultati mostrano che i tempi più lunghi si osservano nella fase tra l'acqui
 ---
 
 ## Text Mining delle Recensioni
+
+<img src="{{ site.baseurl }}/assets/olist_wc.png" alt="Word Cloud Recensioni" style="width: 100%;">
 
 ### Tematiche d'Importanza per i Clienti
 
@@ -161,6 +189,8 @@ I commenti delle recensioni sono stati tradotti in inglese e analizzati in Pytho
 
 ## Sentiment Analysis: Sentimento Positivo
 
+<img src="{{ site.baseurl }}/assets/olist12_pos_wordcloud.png" alt="Word Cloud Sentimento Positivo" style="float: left; margin-right: 20px; margin-bottom: 10px; max-width: 45%;">
+
 ### Tematiche d'Importanza per i Clienti
 
 I clienti che esprimono sentiment positivo spesso menzionano anche la facilità dell'acquisto e il servizio clienti reattivo. Le parole sui tempi di consegna emergono molto, confermando le analisi precedenti che identificano la logistica come fattore chiave di soddisfazione.
@@ -176,9 +206,13 @@ I clienti che esprimono sentiment positivo spesso menzionano anche la facilità 
 **Esperienza d'Acquisto**
 - Compaiono termini che indicano un alto livello di soddisfazione complessiva
 
+<div style="clear: both;"></div>
+
 ---
 
 ## Sentiment Analysis: Sentimento Negativo
+
+<img src="{{ site.baseurl }}/assets/olist13_neg_wordcloud.png" alt="Word Cloud Sentimento Negativo" style="float: left; margin-right: 20px; margin-bottom: 10px; max-width: 45%;">
 
 ### Tematiche d'Importanza per i Clienti
 
@@ -194,6 +228,8 @@ I problemi con il prodotto ricevuto sembrano influire in modo significativo sul 
 
 **Esperienza d'Acquisto**
 - Esperienze poco soddisfacenti durante il processo di acquisto e con il servizio clienti
+
+<div style="clear: both;"></div>
 
 ---
 

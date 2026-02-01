@@ -15,7 +15,7 @@ title: About me :)
     
     <p>Ho esperienza in digital marketing analytics e business intelligence. Le mie competenze tecniche includono Python, SQL, Excel, Power BI, Tableau, Google Analytics, Google Looker Studio e agenti AI.</p>
     
-    <p>Attualmente sto ampliando le mie conoscenze attraverso lo sviluppo di progetti personali, che puoi trovare nella sezione [Portfolio]({{ site.baseurl }}/portfolio).</p>
+    <p>Attualmente sto ampliando le mie conoscenze attraverso lo sviluppo di progetti personali, che puoi trovare nella sezione [Portfolio](portfolio).</p>
     
     <p>Sono disponibile per collaborazioni freelance! 👇<br>
     

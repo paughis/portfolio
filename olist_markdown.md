@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Customer Satisfaction Analysis
+title: 
 permalink : /olist_markdown/
 ---
 
@@ -54,9 +54,9 @@ La tabella aggrega informazioni provenienti da più fonti (tabelle 'payments', '
 
 ## Analisi Descrittiva
 
-<img src="{{ site.baseurl }}/assets/olist4_panoramica_sopra.png" alt="Analisi Descrittiva" style="width: 100%;">
-
 ### Distribuzione Temporale e Pattern delle Valutazioni
+
+<img src="{{ site.baseurl }}/assets/olist4_panoramica_sopra.png" alt="Analisi Descrittiva" style="width: 100%;">
 
 #### Stabilità delle Valutazioni nel Tempo
 
@@ -76,33 +76,33 @@ Gli ordini si concentrano prevalentemente nella fascia standard (6-15 giorni), m
 
 ## Analisi Comparativa: Ranking
 
-<img src="{{ site.baseurl }}/assets/olist_dash_2.png" alt="Analisi Comparativa" style="width: 100%;">
-
 ### Fattori Correlati alle Valutazioni
+
+<img src="{{ site.baseurl }}/assets/olist_dash_2.png" alt="Analisi Comparativa" style="width: 100%;">
 
 I pulsanti di filtro nella parte superiore consentono di selezionare la valutazione media e di aggiornare dinamicamente tutte le visualizzazioni, permettendo il confronto tra ordini ben valutati e quelli con valutazioni basse, al fine di esplorare possibili fattori associati all'esito dell'ordine.
 
 #### Insight Principali (Confronto tra Voto 1 e Voto 5)
 
-1. **Impatto del Tempo di Consegna**: Tra le variabili analizzate, il tempo totale di consegna e il ritardo di consegna sono quelle che mostrano la maggiore differenza passando dalle valutazioni più basse a quelle più alte.
+1. **Impatto del Tempo di Consegna**: tra le variabili analizzate, il tempo totale di consegna e il ritardo di consegna sono quelle che mostrano la maggiore differenza passando dalle valutazioni più basse a quelle più alte.
 
-2. **Stabilità del Giorno della Settimana**: Contrariamente all'ipotesi iniziale, la distribuzione degli ordini per giorno della settimana rimane sostanzialmente stabile tra le diverse valutazioni.
+2. **Stabilità del Giorno della Settimana**: contrariamente all'ipotesi iniziale, la distribuzione degli ordini per giorno della settimana rimane sostanzialmente stabile tra le diverse valutazioni.
 
-3. **Complessità Multi-Venditore**: Gli ordini con un solo venditore rappresentano la maggioranza in tutte le classi di voto. Gli ordini con 4-5 venditori, sebbene molto rari, compaiono solo tra quelli con valutazione minima, suggerendo un possibile legame tra la complessità dell'ordine e l'esperienza d'acquisto (più venditori = rischio più elevato di errori o ritardi).
+3. **Complessità Multi-Venditore**: gli ordini con un solo venditore rappresentano la maggioranza in tutte le classi di voto. Gli ordini con 4-5 venditori, sebbene molto rari, compaiono solo tra quelli con valutazione minima, suggerendo un possibile legame tra la complessità dell'ordine e l'esperienza d'acquisto (più venditori = rischio più elevato di errori o ritardi).
 
 ---
 
 ## Analisi di Correlazione
 
-<img src="{{ site.baseurl }}/assets/olist7_corr.png" alt="Matrice di Correlazione" style="float: left; margin-right: 20px; margin-bottom: 10px; max-width: 45%;">
+<img src="{{ site.baseurl }}/assets/olist7_corr.png" alt="Matrice di Correlazione" style="width: 100%;">
 
 Per approfondire l'analisi delle variabili numeriche di interesse, è stata costruita una matrice di correlazione di Pearson utilizzando Python (librerie Pandas e Seaborn).
 
 ### Insight Principali
 
-1. **Correlazione Negativa**: Le aree più scure evidenziano una correlazione negativa moderata tra la valutazione media e il tempo di consegna (ritardo di consegna e tempo totale di spedizione), in linea con quanto osservato nelle dashboard precedenti.
+1. **Correlazione Negativa**: le aree più scure evidenziano una correlazione negativa moderata tra la valutazione media e il tempo di consegna (ritardo di consegna e tempo totale di spedizione), in linea con quanto osservato nelle dashboard precedenti.
 
-2. **Assenza di Correlazione con la Complessità**: Non emerge una correlazione significativa tra i tempi di consegna e la quantità di venditori coinvolti nell'ordine, contrariamente all'ipotesi iniziale di una maggiore complessità logistica. Tuttavia, data la bassa numerosità degli ordini multi-venditore, questi casi risultano poco rappresentativi e potrebbero richiedere un'analisi separata.
+2. **Assenza di Correlazione con la Complessità**: non emerge una correlazione significativa tra i tempi di consegna e la quantità di venditori coinvolti nell'ordine, contrariamente all'ipotesi iniziale di una maggiore complessità logistica. Tuttavia, data la bassa numerosità degli ordini multi-venditore, questi casi risultano poco rappresentativi e potrebbero richiedere un'analisi separata.
 
 <div style="clear: both;"></div>
 
@@ -120,13 +120,13 @@ All'aumentare del numero di venditori, il ritardo di consegna (definito come la 
 
 Questo risultato appare controintuitivo e solleva una domanda: **Perché ordini più complessi mostrano un ritardo minore?**
 
-**Risposta**: Le stime di consegna diventano più conservative con l'aumentare dei venditori.
+La riposta si potrebbe trovare nelle **stime del tempo di consegna**:
 
 <div style="clear: both;"></div>
 
 #### Stima del Tempo di Consegna e Numero di Venditori
 
-<img src="{{ site.baseurl }}/assets/olist9_stima_consegna.png" alt="Stima Consegna vs Venditori" style="float: left; margin-right: 20px; margin-bottom: 10px; max-width: 45%;">
+<img src="{{ site.baseurl }}/assets/olist9_stima_consegna.png" alt="Stima Consegna vs Venditori" style="width: 100%;">
 
 L'analisi conferma che Olist applica stime sempre più conservative per gli ordini multi-venditore, gestendo efficacemente le aspettative dei clienti e riducendo i ritardi percepiti.
 
@@ -136,61 +136,75 @@ L'analisi conferma che Olist applica stime sempre più conservative per gli ordi
 
 ## Analisi del Lead Time
 
-<img src="{{ site.baseurl }}/assets/olist_10_leadtime.png" alt="Analisi Lead Time" style="width: 100%;">
+<img src="{{ site.baseurl }}/assets/olist10_leadtime.png" alt="Analisi Lead Time" style="width: 100%;">
 
 ### Identificazione delle Fasi Critiche
 
 Per esplorare in quale fase del flusso di acquisto si concentrano i maggiori ritardi, sono stati analizzati quattro boxplot che confrontano la distribuzione dei giorni trascorsi in ciascuna fase del processo.
 
-I risultati mostrano che i tempi più lunghi si osservano nella fase tra l'acquisto e l'approvazione del pagamento, con una media di circa 25 giorni e un intervallo interquartile compreso tra 20 e 30 giorni. Questa fase presenta anche la maggiore dispersione, indicando una forte variabilità dei tempi di approvazione.
-
-### Suddivisione del Lead Time
-
-- **Tempo tra acquisto e approvazione pagamento**: Più lungo e più variabile
-- **Tempo tra approvazione pagamento e spedizione**: Moderato
-- **Tempo tra spedizione e arrivo al cliente**: Standard
-- **Tempo totale di consegna**: Somma di tutte le fasi
+I risultati mostrano che **i tempi più lunghi si osservano nella fase tra l'acquisto e l'approvazione del pagamento**, con una media di circa 25 giorni e un intervallo interquartile compreso tra 20 e 30 giorni. Questa fase presenta anche la maggiore dispersione, indicando una forte variabilità dei tempi di approvazione.
 
 ---
 
 ## Text Mining delle Recensioni
 
-<img src="{{ site.baseurl }}/assets/olist_wc.png" alt="Word Cloud Recensioni" style="width: 100%;">
-
 ### Tematiche d'Importanza per i Clienti
+
+<img src="{{ site.baseurl }}/assets/olist_wc.png" alt="Word Cloud Recensioni" style="width: 100%;">
 
 I commenti delle recensioni sono stati tradotti in inglese e analizzati in Python tramite una word cloud. Le parole più visibili fanno riferimento a prodotto, consegna e tempi, con una prevalenza di termini dal tono positivo, coerente con la distribuzione complessiva delle valutazioni.
 
 #### Temi Chiave Identificati
 
-**Aspettative sui Tempi di Consegna**
-- Tempo di consegna
-- Consegna rapida
-- Consegna in anticipo
-- Puntualità
-- Attesa
-- Ritardo
-
-**Conformità Prodotto-Descrizione**
-- Prodotto corretto
-- Conforme alla descrizione
-- Come da foto
-- Qualità del prodotto
-- Aspettative rispettate
-
-**Qualità del Servizio Clienti**
-- Assistenza
-- Comunicazione
-- Risposta
-- Contatto
-- Rimborso
-- Gestione del problema
+<div style="overflow-x: auto;">
+  <table style="width: 100%; table-layout: fixed;">
+    <thead>
+      <tr>
+        <th style="width: 33.33%;">Aspettative sui Tempi di Consegna</th>
+        <th style="width: 33.33%;">Conformità Prodotto-Descrizione</th>
+        <th style="width: 33.33%;">Qualità del Servizio Clienti</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Tempo di consegna</td>
+        <td>Prodotto corretto</td>
+        <td>Assistenza</td>
+      </tr>
+      <tr>
+        <td>Consegna rapida</td>
+        <td>Conforme alla descrizione</td>
+        <td>Comunicazione</td>
+      </tr>
+      <tr>
+        <td>Consegna in anticipo</td>
+        <td>Come da foto</td>
+        <td>Risposta</td>
+      </tr>
+      <tr>
+        <td>Puntualità</td>
+        <td>Qualità del prodotto</td>
+        <td>Contatto</td>
+      </tr>
+      <tr>
+        <td>Attesa</td>
+        <td>Aspettative rispettate</td>
+        <td>Rimborso</td>
+      </tr>
+      <tr>
+        <td>Ritardo</td>
+        <td></td>
+        <td>Gestione del problema</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 ---
 
 ## Sentiment Analysis: Sentimento Positivo
 
-<img src="{{ site.baseurl }}/assets/olist12_pos_wordcloud.png" alt="Word Cloud Sentimento Positivo" style="float: left; margin-right: 20px; margin-bottom: 10px; max-width: 45%;">
+<img src="{{ site.baseurl }}/assets/olist12_pos_wordcloud.png" alt="Word Cloud Sentimento Positivo" style="width: 100%;">
 
 ### Tematiche d'Importanza per i Clienti
 

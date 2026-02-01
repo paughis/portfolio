@@ -149,7 +149,7 @@ I risultati mostrano che **i tempi più lunghi si osservano nella fase tra l'acq
 
 ## Text Mining delle Recensioni
 
-### Tematiche d'Importanza per i Clienti
+### Tematiche d'Importanza per i Clienti:
 
 <img src="{{ site.baseurl }}/assets/olist_wc.png" alt="Word Cloud Recensioni" style="width: 100%;">
 
@@ -205,9 +205,9 @@ I commenti delle recensioni sono stati tradotti in inglese e analizzati in Pytho
 
 ## Sentiment Analysis: Sentimento Positivo
 
-<img src="{{ site.baseurl }}/assets/olist12_pos_wordcloud.png" alt="Word Cloud Sentimento Positivo" style="width: 100%;">
+### Tematiche d'Importanza per i Clienti:
 
-### Tematiche d'Importanza per i Clienti
+<img src="{{ site.baseurl }}/assets/olist12_pos_wordcloud.png" alt="Word Cloud Sentimento Positivo" style="width: 100%;">
 
 I clienti che esprimono sentiment positivo spesso menzionano anche la facilità dell'acquisto e il servizio clienti reattivo. Le parole sui tempi di consegna emergono molto, confermando le analisi precedenti che identificano la logistica come fattore chiave di soddisfazione.
 
@@ -238,9 +238,9 @@ I clienti che esprimono sentiment positivo spesso menzionano anche la facilità 
 
 ## Sentiment Analysis: Sentimento Negativo
 
-<img src="{{ site.baseurl }}/assets/olist13_neg_wordcloud.png" alt="Word Cloud Sentimento Negativo" style="float: left; margin-right: 20px; margin-bottom: 10px; max-width: 45%;">
+### Tematiche d'Importanza per i Clienti:
 
-### Tematiche d'Importanza per i Clienti
+<img src="{{ site.baseurl }}/assets/olist13_neg_wordcloud.png" alt="Word Cloud Sentimento Negativo" style="width: 100%;">
 
 I problemi con il prodotto ricevuto sembrano influire in modo significativo sul sentiment negativo, più del ritardo o del tempo di attesa prolungato. Alcuni commenti menzionano la comunicazione con il venditore, suggerendo la necessità di un servizio clienti più efficace.
 

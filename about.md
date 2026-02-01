@@ -11,11 +11,11 @@ title: About me :)
   <div style="flex: 1; min-width: 300px;">
     <p>La curiosità e la passione per l'apprendimento sono state il motore che mi ha portato a intraprendere la carriera di data analyst, dopo un'esperienza nell'insegnamento e nella ricerca educativa.</p>
     
-    <p>L'incrocio tra questi due mondi mi ha permesso di sviluppare solide competenze analitiche unite a una comunicazione efficace: so trasformare dati complessi in insight preziosi.</p>
+    <p>L'incrocio tra questi due mondi mi ha permesso di sviluppare solide competenze analitiche unite a una comunicazione efficace: so trasformare dati complessi in <span style="background: linear-gradient(90deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #9400d3); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; font-weight: bold;">insight preziosi</span>.</p>
     
     <p>Ho esperienza in digital marketing analytics e business intelligence. Le mie competenze tecniche includono Python, SQL, Excel, Power BI, Tableau, Google Analytics, Google Looker Studio e agenti AI.</p>
     
-    <p>Attualmente sto ampliando le mie conoscenze attraverso lo sviluppo di progetti personali, che puoi trovare nella sezione [Portfolio](portfolio).</p>
+    <p>Attualmente sto ampliando le mie conoscenze attraverso lo sviluppo di progetti personali, che puoi trovare nella sezione <a href="{{ site.baseurl }}/portfolio">Portfolio</a>.</p>
     
     <p>Sono disponibile per collaborazioni freelance! 👇<br>
     

@@ -94,9 +94,10 @@ I pulsanti di filtro nella parte superiore consentono di selezionare la valutazi
 
 ## Analisi di Correlazione
 
+Per approfondire l'analisi delle variabili numeriche di interesse, è stata costruita una matrice di correlazione di Pearson utilizzando Python (librerie Pandas e Seaborn):
+
 <img src="{{ site.baseurl }}/assets/olist7_corr.png" alt="Matrice di Correlazione" style="width: 100%;">
 
-Per approfondire l'analisi delle variabili numeriche di interesse, è stata costruita una matrice di correlazione di Pearson utilizzando Python (librerie Pandas e Seaborn).
 
 ### Insight Principali
 
@@ -159,39 +160,39 @@ I commenti delle recensioni sono stati tradotti in inglese e analizzati in Pytho
 <div style="overflow-x: auto;">
   <table style="width: 100%; table-layout: fixed;">
     <thead>
-      <tr>
+      <tr style="background-color: #f0f0f0;">
         <th style="width: 33.33%;">Aspettative sui Tempi di Consegna</th>
         <th style="width: 33.33%;">Conformità Prodotto-Descrizione</th>
         <th style="width: 33.33%;">Qualità del Servizio Clienti</th>
       </tr>
     </thead>
     <tbody>
-      <tr>
+      <tr style="background-color: #ffffff;">
         <td>Tempo di consegna</td>
         <td>Prodotto corretto</td>
         <td>Assistenza</td>
       </tr>
-      <tr>
+      <tr style="background-color: #ffffff;">
         <td>Consegna rapida</td>
         <td>Conforme alla descrizione</td>
         <td>Comunicazione</td>
       </tr>
-      <tr>
+      <tr style="background-color: #ffffff;">
         <td>Consegna in anticipo</td>
         <td>Come da foto</td>
         <td>Risposta</td>
       </tr>
-      <tr>
+      <tr style="background-color: #ffffff;">
         <td>Puntualità</td>
         <td>Qualità del prodotto</td>
         <td>Contatto</td>
       </tr>
-      <tr>
+      <tr style="background-color: #ffffff;">
         <td>Attesa</td>
         <td>Aspettative rispettate</td>
         <td>Rimborso</td>
       </tr>
-      <tr>
+      <tr style="background-color: #ffffff;">
         <td>Ritardo</td>
         <td></td>
         <td>Gestione del problema</td>
@@ -212,14 +213,24 @@ I clienti che esprimono sentiment positivo spesso menzionano anche la facilità 
 
 #### Temi Positivi Chiave
 
-**Tempi di Consegna**
-- Molte recensioni apprezzano l'arrivo anticipato dei prodotti e la puntualità
-
-**Condizioni del Prodotto**
-- I clienti evidenziano la buona qualità, la bellezza e la cura nell'imballaggio
-
-**Esperienza d'Acquisto**
-- Compaiono termini che indicano un alto livello di soddisfazione complessiva
+<div style="overflow-x: auto;">
+  <table style="width: 100%; table-layout: fixed;">
+    <thead>
+      <tr style="background-color: #f0f0f0;">
+        <th style="width: 33.33%;">Tempi di Consegna</th>
+        <th style="width: 33.33%;">Condizioni del Prodotto</th>
+        <th style="width: 33.33%;">Esperienza d'Acquisto</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="background-color: #ffffff;">
+        <td>Molte recensioni apprezzano l'arrivo anticipato dei prodotti e la puntualità</td>
+        <td>I clienti evidenziano la buona qualità, la bellezza e la cura nell'imballaggio</td>
+        <td>Compaiono termini che indicano un alto livello di soddisfazione complessiva</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 <div style="clear: both;"></div>
 
@@ -235,14 +246,24 @@ I problemi con il prodotto ricevuto sembrano influire in modo significativo sul 
 
 #### Temi Negativi Chiave
 
-**Prodotto Ricevuto**
-- I clienti lamentano prodotti rotti, errati o di bassa qualità
-
-**Consegna**
-- Problemi legati a ritardi, smarrimenti o all'imballaggio
-
-**Esperienza d'Acquisto**
-- Esperienze poco soddisfacenti durante il processo di acquisto e con il servizio clienti
+<div style="overflow-x: auto;">
+  <table style="width: 100%; table-layout: fixed;">
+    <thead>
+      <tr style="background-color: #f0f0f0;">
+        <th style="width: 33.33%;">Prodotto Ricevuto</th>
+        <th style="width: 33.33%;">Consegna</th>
+        <th style="width: 33.33%;">Esperienza d'Acquisto</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="background-color: #ffffff;">
+        <td>I clienti lamentano prodotti rotti, errati o di bassa qualità</td>
+        <td>Problemi legati a ritardi, smarrimenti o all'imballaggio</td>
+        <td>Esperienze poco soddisfacenti durante il processo di acquisto e con il servizio clienti</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 <div style="clear: both;"></div>
 
@@ -260,17 +281,17 @@ Mantenere l'approccio conservativo nelle stime dei tempi di consegna, particolar
 
 #### Azioni Prioritarie
 
-**1. Tempo di Consegna (Priorità #1)**
-- Ridurre la varianza dei tempi di consegna, con il focus sulle vendite da un unico venditore (segmento a maggiore volume)
+**1. Tempo di Consegna**
+- Ridurre la varianza dei tempi di consegna, con il focus sulle vendite da un unico venditore (segmento a maggiore volume).
 
-**2. Qualità del Prodotto (Priorità #2)**
-- Implementare controlli più rigorosi sulla qualità dei prodotti spediti
-- Migliorare i processi di verifica del prodotto prima della spedizione
+**2. Qualità del Prodotto**
+- Implementare controlli più rigorosi sulla qualità dei prodotti spediti.
+- Migliorare i processi di verifica del prodotto prima della spedizione.
 
 **3. Piano d'Azione**
-- Investigare e risolvere il collo di bottiglia identificato nella fase di approvazione del pagamento
-- Migliorare i protocolli di comunicazione con i clienti durante i ritardi
-- Rafforzare gli standard di qualità dei venditori e il monitoraggio
+- Investigare e risolvere il collo di bottiglia identificato nella fase di approvazione del pagamento.
+- Migliorare i protocolli di comunicazione con i clienti durante i ritardi.
+- Rafforzare gli standard di qualità dei venditori e il monitoraggio.
 
 ---
 
